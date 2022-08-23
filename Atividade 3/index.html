@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Atividade final do módulo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+    <form action="" id="my_form">
+        <h2>Cadastro de imóveis</h2>
+        <div class="question question01" id="typeDiv">
+            <label for="type">Casa ou Apartamento :</label>
+            <select name="type" id="type" >
+                <option value="Casa">Casa</option>
+                <option value="Apartamento">Apartamento</option>
+            </select>
+        </div>
+        <div class="question question02" id="areaDiv">
+            <label for="area">Área do imóvel:</label>
+            <input type="text" name="area" id="area" placeholder="m²">
+        </div>
+        <div class="question question03" id="rentedDiv">
+            <label for="rented">Está alugado? </label>
+            <select name="rented" id="rented">
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+        </div >
+        <div class="question question04" id="nameDiv">
+            <label for="name">Nome da propriedade:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="question question05" id="districtDiv">
+            <label for="district">Bairro onde se encontra:</label>
+            <input type="text" name="district" id="district">
+        </div>
+        <div class="button">
+            <button class="button" type="button" id="submitButton"onclick="register()">
+            Cadastrar
+        </button>
+        </div>
+        
+    </form>
+    <div id="registerList">
+    </div>
+    
+</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
