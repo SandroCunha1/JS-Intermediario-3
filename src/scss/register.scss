@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+/* Container geral */
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    
+    align-items: center;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/38/Blick_auf_Manhattan.JPG");
+    background-position: center;
+    background-size: cover;
+    
+    .box{
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    width: fit-content;
+    height: 100vh;
+    overflow: auto;
+    align-items:center;
+    background-color: rgba(255, 255, 255, 0.153);
+    backdrop-filter: blur(8px);
+
+
+}
+}
+
+
+/* Form de cadastro */
+form{
+  padding: 40px 100px;
+
+.question{
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   text-align-last:center;
+   margin-top: 15px;
+   font-weight: 900;
+   label{
+    margin-bottom: 5px;
+}
+   input, select{
+    height: 30px;
+   }
+}}
+h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+input, select{
+    border-radius: 10px;
+    border: 1px solid black;
+    &:hover{
+    outline: 1px solid white;
+}
+
+}
+
+/* Submit button */
+.button{
+    width: 100%;
+    display: flex;
+button{
+    all: unset;
+    cursor: pointer;
+    align-self: center;
+    margin: 25px auto;
+    padding: 20px 40px;
+    color: white;
+    background-color: rgba(28, 27, 27, 0.606);
+    border: 1px solid black;
+    border-radius: 10px;
+   &:hover{
+    background-color: rgba(0, 0, 0, 0.606);
+} 
+}
+
+}
+
+
+/* Disponivel / Alugado Status */
+.rented{
+    background-color: $red_background;
+    color: white;
+    padding: 3px;
+    font-size: large;
+    width: fit-content;
+    border: 1px solid black;
+}
+.not_rented{
+    background-color: rgb(6, 141, 6);
+    color: white;
+    padding: 3px;
+    font-size: large;
+    width: fit-content;
+    border: 1px solid black;
+}
+
+/* Delete button */
+.delete{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: large;
+    transition: 0.5s;
+    width: fit-content;
+    &:hover{
+    background-color: $red_background;
+    font-size: larger;
+}
+
+}
+
+
+/* List Style */
+.list_style{
+    background-color: $list_backgroundColor;
+    color: white;
+    list-style: none;
+    max-width: 80vw;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    border-top: 0px;
+    margin-bottom: 10px;
+}
+.sup_list_style{
+    background-color: $sup_list_backgroundColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-bottom: 0px;
+}
